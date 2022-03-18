@@ -13,7 +13,7 @@
 # Uncomment a feed source
 sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
-# Add a feed source
-#cho 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-#cho 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+# Add a feed source 
+echo 'src-git kenzo https://github.com/kenzok8/openwrt-package' >>feeds.conf.default
+echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
 git clone https://github.com/esirplayground/luci-app-poweroff.git   package/lean/luci-app-poweroff
